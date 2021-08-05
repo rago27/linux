@@ -1,0 +1,31 @@
+apps:
+
+telegram
+zoom
+htop
+steam		-ksp
+gnome tweaks
+tlpui (battery thresh 20-80)
+discord
+
+extensions:
+vitals (temp,fan,processor,battery)				
+system76 built in (desktop icons, ubuntu app indicators off)	cosmic dock on, but disabled (to hide gnome dock)
+hide top bar (shortcut fn, hide time 0.0, always hide)
+
+
+
+packages:
+tlp 
+debhelper
+dh-virtualenv
+python3 packages (for tlpui)
+gparted
+gnome-sushi (for quick look)
+
+notes:
+sudo chown username:username mount point  -- to change ownership of drive
+gsettings set org.gnome.Terminal.Legacy.Settings headerbar false  -- to disable terminal menubar
+
+selection-background colour: #94EBEB
+
