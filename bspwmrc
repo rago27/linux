@@ -1,0 +1,31 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+$HOME/.config/polybar/launch.sh 
+
+bspc monitor -d 1 2 3 4 5 6
+
+bspc config focused_border_color "#f03030"
+#bspc config normal_border_color "#909090"
+
+bspc config border_width         3
+bspc config window_gap           6
+bspc config top_padding		 0
+bspc config bottom_padding  	 0
+
+bspc config split_ratio          0.60
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Brave-browser desktop='^3' follow=on
+bspc rule -a discord desktop='^4' follow=on
+bspc rule -a Steam desktop='^5' follow=on
+bspc rule -a Code desktop='^6' state=monocle follow=on
+#bspc rule -a minecraft desktop='^5' state=fullscreen follow=on
+bspc rule -a supertuxkart desktop='^5' state=fullscreen follow=on
+
+#bspc rule -a Screenkey manage=off
+
+
+   
